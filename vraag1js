@@ -1,0 +1,11 @@
+// antwoord op vraag 1
+
+
+let version = 0.1 
+let name = "Huis van de Toekomst"                   
+let inventor = "Chriet Titulaer"
+let currentTemperature = 22
+let currentPeoplePresent = 4
+let pets = ["cat", "capibara"]
+let surveillance = true
+let collectDataForEvilCorporations = true
