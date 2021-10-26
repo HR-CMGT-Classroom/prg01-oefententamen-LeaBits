@@ -2,16 +2,22 @@
 
 let breakfastPrepared = false
 let totalPeople = 4
-let peopleAsleep = 2 
+let peopleAsleep = 2
 
- 
+
 loops.forever(function () {
-    console.log(`2 bewoners slapen nog, en er zijn 2 wakker`)
+    console.log(`${peopleAsleep} bewoners slapen nog, en er zijn ${totalPeople - peopleAsleep} wakker`)
     // cruesli control 2000
-    pins.A1.digitalWrite(true)
-    console.log(`Fijne dag iedereen!`)
+    if (peopleAsleep == 0 && breakfastPrepared == false) {
+        pins.A1.digitalWrite(true)
+        breakfastPrepared = true
+        console.log(`Fijne dag iedereen!`)
+    }
 })
 
 input.buttonA.onEvent(ButtonEvent.Click, function () {
-
+    peopleAsleep--
+    if (peopleAsleep < 0) {
+        peopleAsleep = 0
+    }
 })
