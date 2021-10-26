@@ -1,11 +1,10 @@
 // antwoord op vraag 5
 
-let ambianceOne = "entertainment"
-let ambianceTwo = "work"
-let ambianceThree = "cleaning"
+let ambiances = ["entertainment", "work", "cleaning", "morning"]
+ambiances.push("movies")
 
-console.log(`Er zijn 3 ambiances. Dit zijn:`)
-console.log(`Huis modus : ${ambianceOne}`)
-console.log(`Huis modus : ${ambianceTwo}`)
-console.log(`Huis modus : ${ambianceThree}`)
+console.log(`Er zijn ${ambiances.length} ambiances. Dit zijn:`)
 
+for (let i = 0; i < ambiances.length; i++) {
+    console.log(`Huis modus : ${ambiances[i]}`)
+}
