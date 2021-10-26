@@ -1,11 +1,11 @@
 // antwoord op vraag 1
 
 
-let version = 0.1 
-let name = "Huis van de Toekomst"                   
-let inventor = "Chriet Titulaer"
-let currentTemperature = 22
-let currentPeoplePresent = 4
-let pets = ["cat", "capibara"]
-let surveillance = true
-let collectDataForEvilCorporations = true
+const version = 0.1     // number, versie nummer geef je aan bij een nieuwe iteratie
+const name = "Huis van de Toekomst"    // string, naam van een huis veranderd niet               
+const inventor = "Chriet Titulaer"    // string, naam van een persoon veranderd niet
+let currentTemperature = 22   // number
+let currentPeoplePresent = 4    // number
+let pets = ["cat", "capibara"]    // array (met strings)
+let surveillance = true   // boolean
+let collectDataForEvilCorporations = true   // boolean
