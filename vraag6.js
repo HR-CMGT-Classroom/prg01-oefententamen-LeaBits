@@ -5,23 +5,25 @@ let currentBrightness = 50
 let currentVolume = 40
 
 input.buttonA.onEvent(ButtonEvent.Click, function () {
-    currentTemperature = 18
-    currentBrightness = 255
-    currentVolume = 100   
-    console.log("Avond")
+    mood(currentTemperature, currentBrightness, currentVolume, "'s morgens")
 })
 
 input.buttonB.onEvent(ButtonEvent.Click, function () {
-    currentTemperature = 18
-    currentBrightness = 255
-    currentVolume = 100   
-    console.log("Avond")
+    mood(1, 2, 3, "avond")
 })
 
 input.buttonsAB.onEvent(ButtonEvent.Click, function () {
-    currentTemperature = 18
-    currentBrightness = 255
-    currentVolume = 100   
-    console.log("Avond")
+    mood(4, 5, 6, "middag")
 })
 
+function mood(
+    temp: number,
+    bright: number,
+    sound: number,
+    ambiance: string
+) {
+    currentTemperature = temp
+    currentBrightness = bright
+    currentVolume = sound
+    console.log(ambiance)
+}
